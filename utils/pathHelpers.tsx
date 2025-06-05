@@ -1,5 +1,5 @@
+import { Home, Mail, Quote, Search } from "lucide-react";
 import { ElementType } from "react";
-import { Home, Search, QuestionMark, Mail } from "lucide-react";
 export type NavLink = {
   href: string;
   external: boolean;
@@ -37,7 +37,7 @@ export const navLinks = [
     href: routes.about(),
     external: false,
     label: "About",
-    icon: QuestionMark,
+    icon: Quote,
   },
   {
     href: routes.about(),
