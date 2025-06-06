@@ -34,7 +34,7 @@ export function PropertyCard({
   return (
     <Link href={`/properties/${property.id}`}>
       <Card
-        className="overflow-hidden transition-all duration-300 h-full hover:shadow-lg pt-0"
+        className="property-card pt-0"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -68,7 +68,7 @@ export function PropertyCard({
             <span className="sr-only">Add to favorites</span>
           </Button>
 
-          <div className="absolute bottom-2 left-2 bg-primary px-2 py-1 rounded-md text-primary-foreground text-sm font-medium">
+          <div className="absolute bottom-2 left-2 bg-secondary px-2 py-1 rounded-md  text-sm font-medium ">
             {formatCurrency(property.price)}
           </div>
         </div>
